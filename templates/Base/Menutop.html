@@ -1,0 +1,101 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+ 
+  <!-- Place favicon.ico in the root directory -->
+<link rel="stylesheet" type="text/css" href="{% static "Css/bootstrap.min.css"%}">
+<link rel= "stylesheet" type="text/css" href="{% static "Css/estilos.css"%}">
+
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+<!-- Codigo del menu-->
+<div class="container">
+  <div class="row" id="a">
+    <div class="col-xs-12 col-sm-1 col-md-1" id="b">
+        <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       Menú
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Ínicio<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a>
+                </li>
+                <li>
+                    <a href="#">¿Quienes somos?<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a>
+                </li>
+                <li>
+                    <a href="../Galeria/index.html">Registrarse<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a>
+                </li>
+                <li>
+                    <a href="../Galeria/index.html">Iniciar seccion<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a>
+                </li>                
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+          <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+            </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+    </div>
+    
+  </div>
+</div>
+
+<!-- end Codigo del menu-->
+
+
+
+
+  <script src="{% static "js/vendor/modernizr-3.6.0.min.js"%}"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script type="{% static "documentos.js/bootstrap.min.js"%}"></script>
+  <script src="{% static "js/plugins.js"%}"></script>
+  <script src="{% static "js/main.js"%}"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<!--Nuevo codigo acaabajo 10-08-2018 -->
+<script src="{% static "js/bootstrap.min.js" %}" ></script>
+<script src="{% static "js/componente.js" %}" ></script>
+<!--Nuevo codigo aca arriba 10-08-2018 -->
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimun-scale=1.0">
+  <title>VIAD</title>
+  <link rel="stylesheet"  href="{% static "bt4/css/bootstrap.min.css" %}">
+  <link rel= "stylesheet" type="text/css" href="{% static "Css/estilos.css"%}">
+  <link rel="stylesheet" type="text/css" href="{% static "Css/carousel.css"%}">
+  <link rel= "stylesheet"  href="{% static "Css/css.css" %}">
+</head>
+<body id="Fondo" style="background:#060606;">
+<!--Comienzo de la seccion-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <img src="{% static "media/Logo.png" %}" style="width: 250px; height: 160px;margin-top: 2em;">
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <section style="background:blue; margin-top: 2em; margin-left:-6em;">
+        <h2 style="font-size: 8.5em;">Servicios</h2>
+      </section>
+    </div>
+  </div>
+</div>
+<br>
+<!--Final de la seccion-->
+<!--Inicio del menu-->
+<div class="container-fluid">
+  <header>
+    <nav class="navbar nav navbar navbar-dark bg-dark navbar-expand-sm ">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <div class="navbar-nav text-center" >
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-3">
+                <a class="nav-item nav-link active" href="#">Servicios </a>
+              </div>
+              <div class="col-md-4">
+                <a class="nav-item nav-link " href="{% url 'Inicio:Nosotros' %}">Nosotros</a>
+              </div>
+              <div class="col-md-3">
+                <a class="nav-item nav-link " href="{% url 'Inicio:Contactanos' %}">Contactanos</a>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </header> 
+</div> 
+<!--Final del menu-->
+<br><br><br><br>
+<!--Carousel-->
+<div class="container">
+  <div class="row" id="a">
+  <div class="col-md-12">   
+  <!--Carousel-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="img-fluid" alt="Responsive image" src="{% static "media/chaquetanb.jpg" %}" style="width: 971px; height: 500px;">
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" alt="Responsive image" src="{% static "media/ultimate.jpg" %}" style="width: 971px; height: 500px;">
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" alt="Responsive image" src="{% static "media/chaquetablanca.jpg" %}" style="width: 971px; height: 500px;">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+    </div>
+    <!--Final del carousel -->
+<!-- Inicio de las seiones-->
+<div class="container-fluid">
+
+  <br><br>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="container"> 
+          <img style="width: 100%;"  src="{%static "media/instagram.png "%}"><br>
+      </div>
+      <div>
+      <h2 class="text-center" style="color: white;">Empresas</h2>
+      </div>
+      <button style="width: 100%;background:#041BDB;" type="button" class="btn btn-dark" onclick="Empresas();">Continuar</button>
+    </div>
+    <div class="col-md-4">
+      <div class="container"> 
+          <img style="width: 100%;"  src="{%static "media/Whatsapp2.png "%}"><br>
+      </div>
+      <div>
+      <h2 class="text-center" style="color: white;">Equipos</h2>
+      </div>
+      <button style="width: 100%;background:#FC7104;" type="button" class="btn btn-dark" onclick="Equipos();">Continuar</button>
+    </div>
+    <div class="col-md-4">
+      <div class="container">
+          <img style="width: 100%;" src="{%static "media/gmail.png "%}" style="width: 225px; height: 225px;">
+      </div>
+      <div>
+      <h2 class="text-center" style="color: white;">Personas</h2>
+      <button style="width: 100%;background:#22DB04;" type="button" class="btn btn-dark" onclick="Personas();">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Final de las seiones-->
+</body>
+<script src="{% static "bt4/js/jquery.min.js" %}"></script>
+<script src="{% static "bt4/js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/plugins.js"%}"></script>
+<script src="{% static "js/main.js"%}"></script>
+<script src="{% static "js/carousel.js" %}"></script>
+<script src="{% static "js/componente.js" %}" ></script>
+<script src="{% static "js/servicios.js" %}" ></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.25.0/dist/sweetalert2.all.min.js"></script>
+</html>

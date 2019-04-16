@@ -1,0 +1,15 @@
+
+.footer{
+	border-style: solid;
+}
+.card{margin-bottom: 15px; border-radius:0; box-shadow: 0 3px 5px rgba(0,0,0,.1); }
+#menu{
+  background-color: powderblue;
+  transition: background-color .5s;
+}
+
+#menu:hover{
+  background-color: white;
+}
+
+

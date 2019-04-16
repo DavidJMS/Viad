@@ -1,0 +1,17 @@
+#choose:invalid {
+  border: 1px solid red;
+}
+
+#choose:valid {
+  border: 1px solid green;
+
+}
+#MensajeAEnviar:invalid {
+  border: 1px solid red;
+}
+
+#MensajeAEnviar:valid {
+  border: 1px solid green;
+
+}
+

@@ -1,0 +1,138 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimun-scale=1.0">
+	<title>VIAD</title>
+</head>
+<link rel="stylesheet"  href="{% static "bt4/css/bootstrap.min.css" %}">
+<link rel= "stylesheet" type="text/css" href="{% static "Css/estilos.css"%}">
+<link rel="stylesheet" type="text/css" href="{% static "Css/carousel.css"%}">
+<link rel= "stylesheet"  href="{% static "Css/css.css" %}">
+<body id="Fondo" background="{% static "media/fongo.jpg"%}" style="background-size:100% 100%;">
+
+<!--Inicio del menu-->
+<div class="container">
+  <header>
+    <nav class="navbar fixed-top nav navbar navbar-dark bg-dark navbar-expand-sm ">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <a class="navbar-brand" href="#">
+        <img src="{% static "media/Logo.png"%}" width="100" height="50" class="d-inline-block align-top" alt="Logo">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <div class="navbar-nav text-center" >
+              <a class="nav-item nav-link active" href="#">Inicio </a>
+              <a class="nav-item nav-link" href="{% url 'Inicio:Quienessomos' %}">Sobre nosotros</a>
+              <a class="nav-item nav-link" href="{% url 'Inicio:Contactanos' %}">Contactanos</a>
+              <a class="nav-item nav-link" href="#">Registrarse</a>
+              <a class="nav-item nav-link" href="#">Iniciar seccion</a>
+          </div>
+        </div>
+    </nav>
+  </header> 
+</div> 
+<!--Final del menu-->
+<!--Logo-->
+<!--
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-12">
+      <img style="width: 1199px; height: 300px;" id="VIAD" align="center" src="{% static "media/Logo.png"%}"> 
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+-->
+<!--Final del Logo-->
+<br><br><br><br>
+<!--Carousel-->
+<div class="container">
+  <div class="row" id="a">
+  <div class="col-md-12">   
+  <!--Carousel-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="img-fluid" alt="Responsive image" src="{% static "media/chaquetanb.jpg" %}">
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" alt="Responsive image" src="{% static "media/ultimate.jpg" %}" class="adaptar">
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" alt="Responsive image" src="{% static "media/chaquetablanca.jpg" %}" class="adaptar">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+    </div>
+    <!--Final del carousel -->
+    <br><br><br><br>
+    <!--Comienzo de las 3 secciones finales denro del footer-->
+    <section id="footer">
+      <div class="row">
+        <div class="col-md-4">
+          <section class="footer">
+            <h2 class="text-justify">Empresas</h2>
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <div class="col-md-4">
+          <section class="footer">
+            <h2 class="text-justify">Equipos</h2>
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <div class="col-md-4">
+          <section class="footer">
+            <h2 class="text-justify">Personas</h2>
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+        </div>  
+      </div>  
+    </section>
+    <!--Final del footer-->
+  </div>
+</div>
+
+</body>
+<script src="{% static "bt4/js/jquery.min.js" %}"></script>
+<script src="{% static "bt4/js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/plugins.js"%}"></script>
+<script src="{% static "js/main.js"%}"></script>
+<script src="{% static "js/carousel.js" %}"></script>
+<script src="{% static "js/componente.js" %}" ></script>
+</html>

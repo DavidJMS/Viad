@@ -1,0 +1,74 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VIAD</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{% static "Css/bootstrap.min.css"%}">
+<link rel="stylesheet" type="text/css" href="{% static "Css/carousel.css"%}">
+<link rel="stylesheet" type="text/css" href="{% static "Css/bootstrap.min.css"%}">
+<link rel= "stylesheet" type="text/css" href="{% static "Css/estilos.css"%}">
+<link rel= "stylesheet" type="text/css" href="{% static "Css/css.css"%}"><body>
+<div class="container">
+  <div class="row">
+
+<!-- Codigo del menu-->
+<!--
+<div class="container">-->   
+<!-- end Codigo del menu-->
+
+
+    <div class="col-sm-12 col-md-10">
+    <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <img id="VIAD" align="center" src="{% static "media/VIADNEGRO.jpg" %}"> 
+          </div>
+          <div class="col-md-2"></div>
+    </div> 
+    <br><br>    
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-3">
+            </div>
+            <div class="col-xs-6">
+              <h2>Registrarse</h2><br><br>
+                <!-- Construir Mi Formulario -->
+            <form action="" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{ Form.as_p }}
+                        <button class="btn btn-primary btn-block" type="submit">Enviar</button><br><br><br>
+                        </form>
+            </div>
+            <div class="col-xs-3"></div>
+        </div>
+    </section>
+
+  
+
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
+<script src="{% static "static/js/carousel.js" %}"></script>
+<script src="{% static "js/vendor/modernizr-3.6.0.min.js"%}"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script type="{% static "documentos.js/bootstrap.min.js"%}"></script>
+  <script src="{% static "js/plugins.js"%}"></script>
+  <script src="{% static "js/main.js"%}"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<!--Nuevo codigo acaabajo 10-08-2018 -->
+<script src="{% static "js/bootstrap.min.js" %}" ></script>
+<script src="{% static "js/componente.js" %}" ></script>
+<!--Nuevo codigo aca arriba 10-08-2018 -->
+</html>

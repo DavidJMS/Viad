@@ -1,0 +1,118 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimun-scale=1.0">
+	<title>VIAD</title>
+  <link rel="stylesheet"  href="{% static "bt4/css/bootstrap.min.css" %}">
+  <link rel= "stylesheet" type="text/css" href="{% static "Css/estilos.css"%}">
+  <link rel="stylesheet" type="text/css" href="{% static "Css/carousel.css"%}">
+  <link rel= "stylesheet"  href="{% static "Css/css.css" %}">
+</head>
+<body id="Fondo" style="background:#060606;">
+<!--Comienzo de la seccion-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <img src="{% static "media/Logo.png" %}" style="width: 250px; height: 160px;margin-top: 2em;">
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <section style="background:rgb(0, 255, 0); margin-top: 2em; margin-left:-6em;">
+        <h2 style="font-size: 8.5em;">Nosotros</h2>
+      </section>
+    </div>
+  </div>
+</div>
+<br>
+<!--Final de la seccion-->
+<!--Inicio del menu-->
+<div class="container-fluid">
+  <header>
+    <nav class="navbar nav navbar navbar-dark bg-dark navbar-expand-sm ">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <div class="navbar-nav text-center" >
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-3">
+                <a class="nav-item nav-link" href="{% url 'Inicio:Servicios' %}">Servicios </a>
+              </div>
+              <div class="col-md-4">
+                <a class="nav-item nav-link active" href="#">Nosotros</a>
+              </div>
+              <div class="col-md-3">
+                <a class="nav-item nav-link " href="{% url 'Inicio:Contactanos' %}">Contactanos</a>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </header> 
+</div> 
+<!--Final del menu-->
+<br><br>
+<!-- Inicio de las seiones-->
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div style="background:#181818;" class="col-md-12">
+        <p class="text-rigth" style="font-size: 3em;color: white;">Somos una empresa que se mantiene a la vanguarda en sus diseños y diversos estilos de prendas para vestir de manera que podamos llevarle al cliente comodidad y estilo.</p>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="row ">
+    <div class="col-md-3">
+      <div class="container"> 
+          <img style="width: 100%;"  src="{%static "media/instagram.png "%}"><br>
+      </div>
+      <div>
+      <h2 class="text-center" style="color: white;">Reseña</h2>
+      </div>
+      <button style="width: 100%; background: #041BDB;margin-bottom: 1em;" type="button" class="btn btn-dark" onclick="Reseña();">Continuar</button>
+    </div>
+    <div class="col-md-3">
+      <div class="container"> 
+          <img style="width: 100%;"  src="{%static "media/Whatsapp2.png "%}"><br>
+      </div>
+      <div>
+      <h2 class="text-center" style="color: white;">Mision</h2>
+      </div>
+      <button style="width: 100%;background:#0469DB;margin-bottom: 1em;" type="button" class="btn btn-dark" onclick="Mision();">Continuar</button>
+    </div>
+    <div class="col-md-3">
+      <div class="container">
+          <img style="width: 100%;" src="{%static "media/gmail.png "%}" style="width: 225px; height: 225px;">
+      </div>  
+      <div>
+      <h2 class="text-center" style="color: white;" >Vision</h2>
+      <button style="width: 100%;background:#FC7104;margin-bottom: 1em;" type="button" class="btn btn-dark" onclick="Vision();">Continuar</button>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container"> 
+          <img style="width: 100%;" src="{%static "media/telefono.jpg "%}">
+      </div>  
+      <div >
+        <h2 class="text-center" style="color: white;">Valores</h2>
+      </div>
+      <button style="width: 100%;background:#22DB04;margin-bottom: 1em;" type="button" class="btn btn-dark" onclick="Valores();">Continuar</button>
+    </div>
+  </div>
+</div>
+<!-- Final de las seiones-->
+</body>
+<script src="{% static "bt4/js/jquery.min.js" %}"></script>
+<script src="{% static "bt4/js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/plugins.js"%}"></script>
+<script src="{% static "js/main.js"%}"></script>
+<script src="{% static "js/componente.js" %}" ></script>
+<script src="{% static "js/Nosotros.js" %}" ></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.25.0/dist/sweetalert2.all.min.js"></script>
+<!--Nuevo codigo aca arriba 10-08-2018 -->
+</html>

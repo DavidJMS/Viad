@@ -1,0 +1,99 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimun-scale=1.0">
+	<title>VIAD</title>
+</head>
+<link rel="stylesheet"  href="{% static "bt4/css/bootstrap.min.css" %}">
+<link rel= "stylesheet" type="text/css" href="{% static "Css/estilos.css"%}">
+<link rel="stylesheet" type="text/css" href="{% static "Css/carousel.css"%}">
+<link rel= "stylesheet"  href="{% static "Css/css.css" %}">
+<body id="Fondo" background="{% static "media/fongo.jpg"%}" style="background-size:100% 100%;">
+
+<!--Inicio del menu-->
+<div class="container">
+  <header>
+    <nav class="navbar fixed-top nav navbar navbar-dark bg-dark navbar-expand-sm ">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <a class="navbar-brand" href="#">
+        <img src="{% static "media/Logo.png"%}" width="100" height="50" class="d-inline-block align-top" alt="Logo">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <div class="navbar-nav text-center" >
+              <a class="nav-item nav-link" href="{% url 'Inicio:Inicio' %}">Inicio </a>
+              <a class="nav-item nav-link" href="{% url 'Inicio:Quienessomos' %}">Sobre nosotros</a>
+              <a class="nav-item nav-link active" href="#">Contactanos</a>
+              <a class="nav-item nav-link" href="#">Registrarse</a>
+              <a class="nav-item nav-link" href="#">Iniciar seccion</a>
+          </div>
+        </div>
+    </nav>
+  </header> 
+</div> 
+<!--Final del menu-->
+<br><br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">
+        Contactanos por medio de nuestras sociales
+      </h1>
+    </div>
+  </div>
+</div>
+<!-- Inicio de las seiones-->
+<div class="container">
+  <div class="row">
+    <div class="container">
+      <div class="col-md-12">
+        <section>
+          <h2>Instagram</h2><br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="{%static "media/instagram.png "%}">
+              </div>
+              <div class="col-md-9">
+                <h3 class="text-justify">Siguenos en instagram para que no te pierdas ninguna de nuestras novedades, estes actualizado con nuestro contenido y aproveches todas nuestras ofertas</h3>
+                  <div class="row"> 
+                    <div class="col-md-12"> 
+                      <a style="width:100%;" type="button" class="btn btn-dark" href="https://www.instagram.com/viad.monagas/">IR</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <br>  <br>  
+        <section>
+          <h2>Whatsapp</h2><br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="{%static "media/Whatsapp2.png "%}">
+              </div>
+              <div class="col-md-9">
+                <h3 class="text-justify">Contactanos por medio de nuestro whatssap para pedir cualquiera de nuestro roductos disponibles, realizar pedidos, ect.</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                      <a style="width: 100%;" type="button" class="btn btn-dark" href="https://api.whatsapp.com/send?phone=+584265809173&text=Buenas estoy interesado e sus productos">IR</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>  
+  </div>
+</div>
+<!-- Final de las seiones-->
+</body>
+<script src="{% static "bt4/js/jquery.min.js" %}"></script>
+<script src="{% static "bt4/js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/plugins.js"%}"></script>
+<script src="{% static "js/main.js"%}"></script>
+<script src="{% static "js/carousel.js" %}"></script>
+<script src="{% static "js/componente.js" %}" ></script>
+</html>
